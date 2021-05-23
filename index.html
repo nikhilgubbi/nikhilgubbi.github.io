@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Document</title> 
+ </head> 
+ <body> 
+  <div id ="page" style="width:700px; height:1050px; padding:20px; text-align:center; border: 10px solid #787878"> 
+   <div style="width:650px; height:1010px; padding:20px; text-align:center; border: 5px solid #787878"> 
+    <span style="font-size:16px;">||JAI SRI GURUDEV||</span> 
+    <br> 
+    <span style="font-size:19px; font-weight:bold">S J C Institute of Technology</span> 
+    <br> 
+    <span style="font-size:19px;">Chikkballapur-562101</span> 
+    <br> 
+    <span style="font-size:19px;">Department of Computer Science and Engineering</span> 
+    <br> 
+    <span style="font-size:19px;">2020-2021</span> 
+    <br> 
+    <img src="https://www.sjcit.ac.in/wp-content/uploads/2020/08/Artboard-2-2-150x150.png" alt="SJCIT" style="  display: block;margin-left: auto;margin-right: auto;width: 50%;width:100px;height:100px;"> 
+    <span style="font-size:30px; font-weight:bold">Internship Marks sheet</span> 
+    <br> 
+    <span style="font-size:20px;text-align:justify;">USN: <input type="text"  name="usn" onChange="{this.inputEditConvert}"></span> 
+    <span style="font-size:20px;text-align: justify;">Student Name: <input type="text" name="name" onChange="{this.inputEditConvert}"></span>
+    <br> 
+    <span style="font-size:20px;text-align: justify;">Project Title: <input type="text" name="project"></span> 
+    <br> 
+    <span style="font-size:20px;text-align: justify;">Company Name: <input type="text" name="clg"></span> 
+    <br> 
+    <span style="font-size:20px;text-align: justify;">Guide Name: <input type="text" name="Guide"></span> 
+    <br> 
+    <span style="font-size:20px;text-align: justify;">Semester: <input type="text" name="Sem"></span> 
+    <br> 
+    <span style="font-size:20px;text-align: justify;">Section: <input type="text" name="Sec"></span> 
+    <br> 
+    <span style="font-size:20px;text-align: justify;">Date: <input type="text" name="date"></span> 
+    <table align="center" border="12"> 
+     <tbody> 
+      <tr> 
+       <th colspan="7" width="240"> Internship Marks Based on Presentation </th> 
+      </tr> 
+      <tr> 
+       <td width="500">Organization Program Description:</td> 
+       <td> <font face="arial"></font><input type="number"  name="opd" id="opda" > </td> 
+      </tr> 
+      <tr> 
+       <td width="500">Internship Job Description:</td> 
+       <td> <font face="arial"></font><input type="number" name="job_desc" id="ijda"> </td> 
+      </tr> 
+      <tr> 
+       <td width="500">Skills Developed:</td> 
+       <td> <font face="arial"></font><input type="number" name="skills" id="sda"> </td> 
+      </tr> 
+      <tr> 
+       <td width="500">Oral Presentation And Defense:</td> 
+       <td> <font face="arial"></font><input type="number" name="opd" id="opada"> </td> 
+      </tr> 
+      <tr> 
+       <td width="500">Reflection Outcomes:</td> 
+       <td> <font face="arial" ></font><input type="number" name="roa" id="roa"> </td> 
+      </tr> 
+      <tr> 
+       <td width="500">TOTAL Marks of Presentation: </td> 
+       <td> <input type="text" id="demototal" value="0" disabled="" /><input type="button" value="add" id="add1" onclick="calc(this.id)"/> </td> 
+      </tr> 
+      <tr> 
+       <th colspan="8" width="240"> Internship Marks Based on Presentation </th> 
+      </tr> 
+      <tr> 
+       <td width="500">Content and Development:</td> 
+       <td> <font face="arial" ><input type="number"   id="cada" ></font></td> 
+      </tr> 
+      <tr> 
+       <td width="500">Organization and Structure:</td> 
+       <td> <font face="arial" ><input type="number"   id="oasa" ></td> 
+      </tr> 
+      <tr> 
+       <td width="500">Format:</td> 
+       <td> <font face="arial" ><input type="number"   id="fa" ></td> 
+      </tr> 
+      <tr> 
+       <td width="500">Grammar, Punctuation and Spelling:</td> 
+       <td> <font face="arial" ><input type="number"   id="gpsa" ></td> 
+      </tr> 
+      <tr> 
+       <td width="500">References:</td> 
+       <td> <font face="arial" ><input type="number"   id="rca" ></td> 
+      </tr> 
+      <tr> 
+       <td width="500">TOTAL Marks of Report:</td> 
+       <td> <font face="arial" ><input type="text"   id="demototal1" value="0" disabled="" /><input type="button" value="add" id="add2" onclick="calc(this.id)"/></font> </td> 
+      </tr> 
+      <tr> 
+       <th colspan="2" width="240"> Internship Overall Total Marks </th> 
+      </tr> 
+      <tr> 
+       <td width="500">Overall Total Marks:</td> 
+       <td> <font face="arial" id="demototal"></font><input type="text"   id="demototal2" value="0" disabled="" /><input type="button" value="Total" id="add3" onclick="calc(this.id)"/> </td> 
+      </tr> 
+      <tr> 
+       <td width="500">Overall Total Percentage:</td> 
+       <td> <font face="arial" id="demoper"></font> <input type="text"   id="demototal3" value="0" disabled="" /><input type="button" value="Calculate Percentage" id="add4" onclick="calc(this.id)"/></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <span style="font-size:20px;font-weight:bold;text-align:justify;">Signature of Guide: </span> 
+    <br> 
+    <span style="font-size:20px;font-weight:bold;text-align:justify;">Signature of Coordinator: </span> 
+    <br> 
+    <text>
+      Note: Total Marks is been calculated for 50, 2-Poor, 3-Fair, 5-Excellent 
+    </text> 
+    
+   </div> 
+  </div> 
+ </body>
+ <script type="text/javascript">
+ 	function calc(clicked_id)
+ 	{
+ 		var val1 = parseInt(document.getElementById("opda").value);
+	 	var val2 = parseInt(document.getElementById("ijda").value);
+	 	var val3 = parseInt(document.getElementById("sda").value);
+	 	var val4 = parseInt(document.getElementById("opada").value);
+	 	var val5 = parseInt(document.getElementById("roa").value);
+	 	var val6 = parseInt(document.getElementById("cada").value);
+	 	var val7 = parseInt(document.getElementById("oasa").value);
+	 	var val8 = parseInt(document.getElementById("fa").value);
+	 	var val9 = parseInt(document.getElementById("gpsa").value);
+	 	var val10 = parseInt(document.getElementById("rca").value);
+	 	var val11 = parseInt(document.getElementById("demototal2").value);
+	 	var val12 = parseInt(document.getElementById("demototal3").value);
+
+	 	if(clicked_id=="add1")
+	 		document.getElementById("demototal").value=val1+val2+val3+val4+val5;
+	 	
+	 	if(clicked_id=="add2")
+	 		document.getElementById("demototal1").value=val6+val7+val8+val9+val10;
+	 	if(clicked_id=="add3")
+	 		document.getElementById("demototal2").value=parseInt(document.getElementById("demototal").value)+parseInt(document.getElementById("demototal1").value);
+	 	if(clicked_id=="add4")
+	 		document.getElementById("demototal3").value=parseInt(document.getElementById("demototal2").value)/50 *100;
+
+ 	}
+ 	
+ </script>
+</html>
